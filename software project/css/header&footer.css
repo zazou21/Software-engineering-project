@@ -1,0 +1,36 @@
+.navbar-brand img {
+    width: 1.5cm;
+    height: 1cm;
+    margin-left: 1cm;
+    padding: 0;
+}
+
+.navbar {
+
+    box-shadow: 3px 3px 9px 3px black;
+}
+
+footer {
+    box-shadow: 3px 3px 9px 3px black;
+}
+
+.footerText {
+    color: #929699
+}
+
+.footerAnchor {
+    color: #929699;
+    text-decoration: none !important;
+}
+
+.footerAnchor:hover {
+    color: #d7dadc;
+}
+
+#abovenavbar {
+    padding: 0;
+    margin-bottom: 0;
+    color: #929699;
+    font-family: cursive;
+    text-align: center;
+}
