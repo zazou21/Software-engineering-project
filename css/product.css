@@ -1,0 +1,13 @@
+.showsizechart {
+    color: rgb(135, 132, 132) !important;
+}
+
+.showsizechart:hover {
+    text-decoration: underline !important;
+    color: rgb(171, 165, 165) !important;
+
+}
+
+.sizechart {
+    width: 10cm;
+}

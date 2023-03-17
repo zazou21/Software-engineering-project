@@ -21,3 +21,12 @@
     box-shadow: 4px 8px 10px 0 grey;
     transform: scale(1.05);
 }
+
+.price {
+    color: black;
+    text-decoration: none !important;
+}
+
+.card-anchor {
+    text-decoration: none !important;
+}

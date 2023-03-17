@@ -13,6 +13,7 @@
 footer {
     box-shadow: 3px 3px 9px 3px black;
     margin-top: 1cm;
+    width: 100%;
 }
 
 .footerText {

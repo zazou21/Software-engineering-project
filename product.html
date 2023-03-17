@@ -2,24 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Sign up</title>
+    <title>product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/myaccount.css">
     <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
 </head>
 
 <body>
     <header>
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="home.html">
+            <a class="navbar-brand" href="#">
                 <img id="logo" src="img/logo.png" alt="logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -53,106 +52,83 @@
                         <a class="nav-link" href="MyAccount.html">My Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="Aboutus.html">About us</a>
                     </li>
                 </ul>
             </div>
-            <li class="navbar-nav nav-item">
+            <li class="navbar-nav nav-item cart">
                 <a href="cart.html" class="nav-link bi bi-cart"></a>
             </li>
 
         </nav>
     </header>
 
-
-    <div id="div" class="Form my-4 mx-5">
-        <div class="container">
-            <div id="firstrow" class="row no-gutters">
-                <div class="col-lg-4">
-                    <img src="img/kids.jpg" alt="kids" class="img-fluid">
-                </div>
-                <div class="col-lg-6 px-5 pt-5">
-                    <h2 class="font-weight-bold py-2">Sign up to start shopping</h2>
-                    <form class="needs-validation">
-                        <div class="form-group form-row was-validated">
-                            <div class="col-lg-5">
-                                <input type="text" class="form-control" placeholder="First Name" required>
-                                <div class="invalid-feedback">
-                                    please enter your first name
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <input type="text" class="form-control" placeholder="Second Name" required>
-                                <div class="invalid-feedback">
-                                    please enter your second name
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group form-row was-validated">
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" placeholder="Email" required>
-                                <div class="invalid-feedback">
-                                    please enter a valid email
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group form-row was-validated">
-                            <div class="col-lg-5">
-                                <input type="password" class="form-control" placeholder="Password" required>
-                                <div class="invalid-feedback">
-                                    please enter your password
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <input type="password" class="form-control" placeholder="Confirm Password" required>
-                                <div class="invalid-feedback">
-                                    please confirm your password
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group form-row was-validated">
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" placeholder="Address" required>
-                                <div class="invalid-feedback">
-                                    please enter your Address
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group form-row was-validated">
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" placeholder="Phone number" required>
-                                <div class="invalid-feedback">
-                                    please enter phone number
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group form-row">
-                            <div class="col-lg-10">
-                                <button style="width: 100%;" type="button" class="btn btn-dark">sign up</button>
-                            </div>
-                        </div>
-
-                    </form>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="img/korkor1.jpg" class="img-fluid  p-3" alt="...">
                 </div>
 
             </div>
+            <div class="col-md-6">
+                <h1>Shirt</h1>
+                <h4>size</h4>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark mr-2" for="btnradio1">S</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio2">M</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio3">L</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio4">XL</label>
+                </div>
+
+
+                <p>not sure of your size, <a class="showsizechart">check size chart</a></p>
+
+
+
+                <img src="img/sizechart.jpg" class="sizechart">
+
+
+
+                <h4>color</h4>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio5" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark mr-2" for="btnradio5">Red</label>
+
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio6" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio6">Blue</label>
+
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio7" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio7">Green</label>
+
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio8" autocomplete="off">
+                    <label class="btn btn-outline-dark mr-2" for="btnradio8">Yellow</label>
+                </div>
+                <br>
+                <br>
+
+
+                <h5>EGP 100</h5>
+
+                <button class="btn btn-dark">add to cart <i class="bi bi-cart" style="color:white"></i>
+
+
+            </div>
+
         </div>
     </div>
-
-
-
-
-
-
-
     <footer class="bg-dark text-white">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-3">
-
                     <button data-target="#address" class="btn btn-dark dropdown-toggle btn-block" type="button"
                         data-toggle="collapse">Address</button>
                     <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
@@ -208,13 +184,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </footer>
+
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
-
-
+    <script src="js/product.js"></script>
 </body>
 
 </html>
