@@ -11,7 +11,7 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #e1e1e1;
+    background-color: rgb(112, 110, 110);
     width: 5vh;
     height: 5vh;
     border-radius: 50%;

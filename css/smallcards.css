@@ -1,0 +1,38 @@
+/* make card button get smaller in mobile screen */
+@media (max-width: 768px) {
+    .card {
+        width: 2.5cm;
+        height: 5cm;
+        padding: 0px !important;
+        margin: 0.05cm;
+
+    }
+
+    .card img {
+        height: 3cm;
+        padding: 0px !important;
+
+    }
+
+
+    .card-body {
+        padding: 0px !important;
+        width: 2.5cm;
+        height: 2cm;
+    }
+
+    .card-text {
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    .price {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .btn-custom {
+        font-size: 8px;
+    }
+}
