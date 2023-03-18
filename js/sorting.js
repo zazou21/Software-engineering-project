@@ -8,14 +8,14 @@ function sortCards() {
         var cards = document.querySelectorAll(".card");
         var sortedCards = Array.from(cards);
         sortedCards.sort(function (a, b) {
-            return parseInt(a.querySelector(".price").textContent.slice(1)) - parseInt(b.querySelector(".price").textContent.slice(1));
+            return parseInt(a.querySelector(".price").textContent) - parseInt(b.querySelector(".price").textContent);
         });
         renderSortedCards(sortedCards);
     } else if (option == "High to low") {
         var cards = document.querySelectorAll(".card");
         var sortedCards = Array.from(cards);
         sortedCards.sort(function (a, b) {
-            return parseInt(b.querySelector(".price").textContent.slice(1)) - parseInt(a.querySelector(".price").textContent.slice(1));
+            return parseInt(b.querySelector(".price").textContent) - parseInt(a.querySelector(".price").textContent);
         });
         renderSortedCards(sortedCards);
     } else if (option == "Default") {
