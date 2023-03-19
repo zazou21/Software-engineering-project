@@ -5,9 +5,37 @@
 .showsizechart:hover {
     text-decoration: underline !important;
     color: rgb(171, 165, 165) !important;
+    cursor: pointer;
 
 }
 
 .sizechart {
     width: 10cm;
+}
+
+.bigimg {
+    width: 10cm;
+    height: 10cm;
+}
+
+.smallimg {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5cm;
+    width: 2cm;
+}
+
+.smallimg:hover {
+    cursor: pointer;
+    box-shadow: 4px 8px 10px 0 grey;
+    transform: scale(1.05);
+
+}
+
+.titles {
+    text-align: center !important;
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
 }
