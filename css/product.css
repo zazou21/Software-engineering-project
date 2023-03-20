@@ -1,3 +1,7 @@
+* {
+    font-family: cursive;
+}
+
 .showsizechart {
     color: rgb(135, 132, 132) !important;
 }
@@ -38,4 +42,39 @@
     font-family: cursive;
     margin-top: 1cm;
     margin-bottom: 1cm;
+}
+
+.counter {
+
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid;
+    width: 3cm;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.number {
+    text-align: center;
+    border-left: 1.5px solid rgb(0, 0, 0, 0.2);
+    border-right: 1.5px solid rgb(0, 0, 0, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.plus {
+    font-size: 23px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.minus {
+    font-size: 23px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
 }
