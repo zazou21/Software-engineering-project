@@ -1,0 +1,56 @@
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.carousel-inner {
+    padding: 0.5cm;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(112, 110, 110);
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.caption {
+    color: white;
+
+}
+
+.caption:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+.homePageTitles {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: 1cm;
+}
+
+
+
+/* for the zoom effect of the image */
+
+
+
+
+.pic-size {
+    width: 20cm;
+    height: 15cm;
+
+
+}
