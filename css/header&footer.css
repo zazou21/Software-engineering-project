@@ -7,36 +7,48 @@
 
 .navbar {
 
-    box-shadow: 3px 3px 9px 3px black;
+    
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 footer {
-    box-shadow: 3px 3px 9px 3px black;
     margin-top: 1cm;
     width: 100%;
 }
 
 .footerText {
-    color: #929699
+    color: #000000
 }
 
 .footerAnchor {
-    color: #929699;
+    color: #000000;
     text-decoration: none !important;
 }
 
 .footerAnchor:hover {
-    color: #d7dadc;
+    color: #0786da;
 }
+
 
 #abovenavbar {
     padding: 0;
-    margin-bottom: 0;
-    color: #929699;
-    font-family: cursive;
+    margin-top: 1cm;
+    color: #0786da;
+    font-family: inherit;
     text-align: center;
+    font-weight: bold;
 }
 
 .cart {
     padding-left: 20px;
+}
+
+.btnstyle{
+    font-weight: bold;
+    
+}
+.btnstyle:hover{
+    color: #0786da;
+    border: none;
 }
