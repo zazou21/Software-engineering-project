@@ -1,0 +1,25 @@
+.view {
+    margin: 1cm;
+
+}
+
+/* the price css is in the cards.css file */
+.currency {
+    font-size: 15px;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    margin-right: 2px;
+
+}
+
+.cardprice {
+    display: inline-flex;
+    align-items: center;
+    margin: 2px;
+}
+.titles{
+    text-align: right;
+    font-size: 20px;
+}

@@ -1,0 +1,54 @@
+.navbar-brand img {
+    width: 1.5cm;
+    height: 1cm;
+    margin-left: 1cm;
+    padding: 0;
+}
+
+.navbar {
+
+    
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+footer {
+    margin-top: 1cm;
+    width: 100%;
+}
+
+.footerText {
+    color: #000000
+}
+
+.footerAnchor {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.footerAnchor:hover {
+    color: #0786da;
+}
+
+
+#abovenavbar {
+    padding: 0;
+    margin-top: 1cm;
+    color: #0786da;
+    font-family: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart {
+    padding-left: 20px;
+}
+
+.btnstyle{
+    font-weight: bold;
+    
+}
+.btnstyle:hover{
+    color: #0786da;
+    border: none;
+}

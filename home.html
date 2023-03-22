@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/smallcards.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <script src="cart.js"></script>
 </head>
@@ -21,7 +22,7 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="img/logo.png" alt="logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -38,17 +39,24 @@
                             Shop
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Infants (0-1 yr)</a></li>
+                            <li><a class="dropdown-item" href="infants.html"> Baby </a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Toddlers (2-4 yrs)</a></li>
+                            <li><a class="dropdown-item" href="toddlers.html"> Toddlers </a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">pre-teens (5-12 yrs)</a></li>
+                            <li><a class="dropdown-item" href="preteens.html"> Children </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accessories.html"> Accessories </a></li>
+                            
+
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -68,51 +76,7 @@
 
 
 
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="container align-items-center">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <img class="pic-size" src="img/boy.jpg" class="d-block w-100" alt="Image 1">
-                    </div>
-                    <div class="carousel-caption d-flex justify-content-center">
-                        <a class="caption" href="preteens.html">
-                            <h1>shop pre-teens</h1>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img class="pic-size" src="img/boy.jpg" class="d-block w-100" alt="Image 1">
-                    </div>
-                    <div class="carousel-caption d-flex justify-content-center">
-                        <a class="caption" href="toddlers.html">
-                            <h1>shop toddlers</h1>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img class="pic-size" src="img/boy.jpg" class="d-block w-100" alt="Image 1">
-                    </div>
-                    <div class="carousel-caption d-flex justify-content-center">
-                        <a class="caption" href="infants.html">
-                            <h1>shop infants</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    </div>
+   
 
 
 
@@ -125,105 +89,108 @@
             </div>
 
             <div class="container">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="NewArrivals" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-
                         <!-- first item -->
                         <div class="carousel-item active">
                             <div class="cards-wrapper">
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor1.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/redshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
-                                        <p class="card-text">ana la gaia</p>
-                                        <button class="btn btn-dark">add to cart <i class="bi bi-cart"
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
                                                 style="color:white"></i></button>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="inner">
-                                        <img src="img/korkor2.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                    <img src="img/blueshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">22olk</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor3.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/yellowshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">esma3 erga3</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor4.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/greenshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">3lshan ana sabri 2alil</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                         <!-- second item -->
                         <div class="carousel-item">
                             <div class="cards-wrapper">
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor1.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/blueshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
-                                        <p class="card-text">ana la gaia</p>
-                                        <button class="btn btn-dark">add to cart <i class="bi bi-cart"
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
                                                 style="color:white"></i></button>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="inner">
-                                        <img src="img/korkor2.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                    <img src="img/greenshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">22olk</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor3.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/greenshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">esma3 erga3</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
-                                <div class="card d-none d-md-block">
-                                    <div class="inner">
-                                        <img src="img/korkor4.jpg" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <img src="img/yellowshirt.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
 
-                                        <p class="card-text">3lshan ana sabri 2alil</p>
-                                        <a href="#" class="btn btn-dark">add to cart</a>
+                                        <button class="btn btn-dark btn-custom">add to cart <i class="bi bi-cart"
+                                                style="color:white"></i></button>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
 
 
-                        <a href="#carouselExampleControls" class="carousel-control-next" data-slide="next">
+                        <a href="#NewArrivals" class="carousel-control-next" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
-                        <a href="#carouselExampleControls" class="carousel-control-prev" data-slide="prev">
+                        <a href="#NewArrivals" class="carousel-control-prev" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
                     </div>
@@ -245,12 +212,12 @@
 
 
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-light text-light">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-3">
-                    <button data-target="#address" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                    <button data-target="#address" class="btn btn-white dropdown-toggle btn-block btnstyle" type="button"
                         data-toggle="collapse">Address</button>
                     <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
                         Egypt <br>
@@ -261,7 +228,7 @@
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#contactinfo" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                    <button data-target="#contactinfo" class="btn btn-white dropdown-toggle btn-block btnstyle" type="button"
                         data-toggle="collapse">Contact Info</button>
                     <p id="contactinfo" class="footerText collapse">
                         <a class="footerAnchor" href="">
@@ -272,15 +239,15 @@
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#exchange" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                    <button data-target="#exchange" class="btn btn-white dropdown-toggle btn-block btnstyle" type="button"
                         data-toggle="collapse">Return & Exchange policy</button>
-                    <p id="exchange" class="footerText collapse">-products are eligble for exchange and reutun
+                    <p id="exchange" class="footerText collapse">-Products are eligble for exchange and reutun
                         up to 30 days<br>
-                        -must have the reciept<br>
-                        -delievery charges may apply to online orders</p>
+                        -Must have the reciept<br>
+                        -Delievery charges may apply to online orders</p>
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#followus" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                    <button data-target="#followus" class="btn btn-white dropdown-toggle btn-block btnstyle" type="button"
                         data-toggle="collapse">Social</button>
                     <p id="followus" class="footerText collapse"><a class="footerAnchor" href="">
                             <i class="bi bi-facebook"> Facebook</i> </a>
@@ -299,8 +266,8 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div id="abovenavbar" class="bg-dark ">
-                            <p>shipping everywhere in egypt <i class="bi bi-truck">
+                        <div id="abovenavbar">
+                            <p> Shipping everywhere in egypt <i class="bi bi-truck">
                                 </i></p>
                         </div>
                     </div>
