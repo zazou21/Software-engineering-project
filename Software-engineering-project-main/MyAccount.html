@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/myaccount.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="home.html">
+                <img id="logo" src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="infants.html">Infants (0-1 yr)</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="toddlers.html">Toddlers (2-4 yrs)</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="preteens.html">pre-teens (5-12 yrs)</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MyAccount.html">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+            <li class="navbar-nav nav-item">
+                <a href="minimeezCart.html" class="nav-link bi bi-cart"></a>
+            </li>
+
+        </nav>
+    </header>
+
+
+    <div id="div" class="Form my-4 mx-5">
+        <div class="container">
+            <div id="firstrow" class="row no-gutters">
+                <div class="col-lg-4">
+                    <img src="img/kids.jpg" alt="kids" class="img-fluid">
+                </div>
+                <div class="col-lg-6 px-5 pt-5">
+                    <h2 class="font-weight-bold py-3">Sign in to your account</h2>
+                    <form class="needs-validation">
+                        <div class="form-group form-row was-validated">
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control my-2" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    please enter a valid email
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-row was-validated">
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control my-2" placeholder="Password" required>
+                                <div class="invalid-feedback">
+                                    please enter your password
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <div class="col-lg-10">
+                                <button style="width: 100%;" type="button" class="btn btn-dark my-2">Login</button>
+                            </div>
+                        </div>
+                        <a class="Anchor" href="forgotpassword.html">Forgot Password?</a>
+                        <br>
+                        <p class="text">Don't have an account? <a class="Anchor" href="register.html">Register here</a>
+                        </p>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="bg-dark text-white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+
+                    <button data-target="#address" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                        data-toggle="collapse">Address</button>
+                    <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
+                        Egypt <br>
+                        <a class="footerAnchor"
+                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583">
+                            <i class="bi bi-geo-alt-fill"> Google Maps</i></a>
+
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#contactinfo" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                        data-toggle="collapse">Contact Info</button>
+                    <p id="contactinfo" class="footerText collapse">
+                        <a class="footerAnchor" href="">
+                            <i class="bi bi-telephone-fill"> +20 220298491</i></a>
+                        <br>
+                        <a class="footerAnchor" href="">
+                            <i class="bi bi-envelope-at-fill"></i> management@mini-me.us</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#exchange" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                        data-toggle="collapse">Return & Exchange policy</button>
+                    <p id="exchange" class="footerText collapse">-products are eligble for exchange and reutun
+                        up to 30 days<br>
+                        -must have the reciept<br>
+                        -delievery charges may apply to online orders</p>
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#followus" class="btn btn-dark dropdown-toggle btn-block" type="button"
+                        data-toggle="collapse">Social</button>
+                    <p id="followus" class="footerText collapse"><a class="footerAnchor" href="">
+                            <i class="bi bi-facebook"> Facebook</i> </a>
+                        <br>
+                        <a class="footerAnchor" href="">
+                            <i class="bi bi-instagram"> Instagram</i> </a>
+                        <br>
+                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518">
+                            <i class="bi bi-whatsapp"> Whatsapp</i> </a>
+                        <br>
+                        <a class=" footerAnchor"
+                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0">
+                            <i class="bi bi-messenger"> Messenger</i> </a>
+
+                    </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div id="abovenavbar" class="bg-dark ">
+                            <p>shipping everywhere in egypt <i class="bi bi-truck">
+                                </i></p>
+                        </div>
+                    </div>
+                </div>
+    </footer>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
