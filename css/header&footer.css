@@ -9,7 +9,7 @@
 
     
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-family: 'Tajawal', sans-serif;
 }
 
 footer {
@@ -35,7 +35,7 @@ footer {
     padding: 0;
     margin-top: 1cm;
     color: #0786da;
-    font-family: inherit;
+    font-family: 'Tajawal', sans-serif;
     text-align: center;
     font-weight: bold;
 }
