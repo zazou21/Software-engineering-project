@@ -19,72 +19,10 @@
     transform: translateY(-50%);
 }
 
-.caption {
-    color: white;
 
-}
 
-.caption:hover {
-    text-decoration: none;
-    color: black;
-}
 
-.categories-container{
-    font-family: 'Tajawal', sans-serif;
-    max-width: 900px;
-    
-}
 
-.categories-container p{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 1cm;
-    font-family: 'Tajawal', sans-serif;
-}
-.categories-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.categories-list img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.categories-list .single-category{
-    height: 160px;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.categories-list .single-category:hover .category-title{
-opacity: 1;
-transform: translateY(0);
-
-}
-
-.categories-list .category-title{
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
-    text-transform: uppercase;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    transform: translateY(100%);
-    transition: all 300ms ease-in-out;
-    opacity: 0;
-}
 .homePageTitles {
     text-align: center;
     font-size: 40px;
@@ -95,14 +33,58 @@ transform: translateY(0);
 
 
 
-/* for the zoom effect of the image */
-
-
-
 
 .pic-size {
     width: 20cm;
     height: 15cm;
 
 
+}
+
+.cat-card {
+  
+    transition: all 0.5s;
+}
+
+.cat-card img {
+    width: 5cm;
+    height: 5cm;
+
+
+}
+
+.cat-text {
+    width: 5cm;
+    height: 1cm;
+    padding-left: 10px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0cm;
+    transition: 0.5s;
+    
+
+}
+
+.cat-age {
+    visibility: hidden;
+}
+
+
+
+.cat-card:hover .cat-text {
+    cursor: pointer;
+    height: 2cm;
+    transition: 0.5s;
+
+
+}
+
+.cat-card:hover {
+    transform: scale(1.1);
+}
+
+.cat-card:hover .cat-age {
+    visibility: visible;
 }

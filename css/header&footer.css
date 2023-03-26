@@ -6,10 +6,16 @@
 }
 
 .navbar {
-
-    
     font-weight: bold;
     font-family: 'Tajawal', sans-serif;
+}
+
+.nav-link {
+    color: #000000 !important;
+}
+
+.nav-link:hover {
+    color: #0786da !important;
 }
 
 footer {
@@ -40,15 +46,16 @@ footer {
     font-weight: bold;
 }
 
-.cart {
-    padding-left: 20px;
+.nav-icon {
+    margin-left: 10px;
 }
 
-.btnstyle{
+.btnstyle {
     font-weight: bold;
-    
+
 }
-.btnstyle:hover{
+
+.btnstyle:hover {
     color: #0786da;
     border: none;
 }

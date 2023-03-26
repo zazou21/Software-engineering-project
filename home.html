@@ -5,19 +5,16 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/smallcards.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script src="js/cart.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap" rel="stylesheet"> -->
 </head>
 
 
@@ -71,49 +68,122 @@
                 </ul>
             </div>
             <li class="navbar-nav nav-item">
-                <a href="minimeezCart.html" class="nav-link bi bi-cart"></a>
+                <div style="display: flex">
+
+                    <a href="minimeezCart.html" class="nav-link bi bi-cart nav-icon"></a>
+
+                    <a href="wishlist.html" class="nav-link bi bi-suit-heart nav-icon"></a>
+
+                </div>
+
+
+
             </li>
 
         </nav>
     </header>
 
-    
-         <div class="categories-container">
-                    <p>SHOP BY CATEGORY</p>
-            
-             <div class="categories-list">
-                <a href="" class="single-category">
-                    <img src="img/wp2365092.jpg" alt="...">
-                    <div class="category-title">Baby Boy</div>
-                </a>
-
-                <a href="" class="single-category">
-                    <img src="img/pexels-j-carter-713959.jpg" alt="...">
-                    <div class="category-title">Baby Girl</div>
-                </a>
-
-                <a href="" class="single-category">
-                    <img src="img/rebenok-malchik-pacan-shket.jpg" alt="...">
-                    <div class="category-title">Toddler Boy</div>
-                </a>
-
-                <a href="" class="single-category">
-                    <img src="img/toddler girl.jpg" alt="...">
-                    <div class="category-title">Toddler Girl</div>
-                </a>
-                
-            </div>
-         </div>
-
-
-
-
     <!-- first row -->
+    <div class="container">
+        <div class="row">
+            <p class="homePageTitles">SHOP BY CATEGORY</p>
+            <div class="col-6 col-lg-3 my-3">
+                <a href="">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/babyboy.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Baby-Boy</p>
+                            <p class="cat-age">1-2 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-lg-3 my-3">
+                <a href="">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/babygirl.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Baby-Girl</p>
+                            <p class="cat-age">1-2 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-lg-3 my-3">
+                <a href="">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/toddlerboy.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Toddler-Boy</p>
+                            <p class="cat-age">3-5 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-lg-3 my-3">
+                <a href="">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/toddlergirl.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Toddler-Girl</p>
+                            <p class="cat-age">3-5 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-lg-4 my-3">
+                <a href="boy.html">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/boy.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Boys</p>
+                            <p class="cat-age">6-10 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-lg-4 my-3">
+                <a href="girl.html">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/girl.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Girls</p>
+                            <p class="cat-age">6-10 years old</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-lg-4 my-3"> <a href="">
+                    <div class="cat-card d-flex justify-content-center align-items-center">
+                        <img src="img/accessories.jpg" alt="">
+                        <div class="cat-text">
+                            <p>Accessories</p>
+                            <p class="cat-age">all ages</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- second row -->
     <div class="row">
         <div class="col">
-            <div class="homePageTitles">
-                <p>NEW ARRIVALS</p>
-            </div>
+
+            <p class="homePageTitles">NEW ARRIVALS</p>
+
 
             <div class="container">
                 <div id="NewArrivals" class="carousel slide" data-ride="carousel">
@@ -249,7 +319,8 @@
                     <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
                         Egypt <br>
                         <a class="footerAnchor"
-                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583">
+                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583"
+                            target="_blank">
                             <i class="bi bi-geo-alt-fill"> Google Maps</i></a>
 
                     </p>
@@ -268,25 +339,32 @@
                 <div class="col-md-3">
                     <button data-target="#exchange" class="btn btn-white dropdown-toggle btn-block btnstyle"
                         type="button" data-toggle="collapse">Return & Exchange policy</button>
-                    <p id="exchange" class="footerText collapse">-Products are eligble for exchange and reutun
-                        up to 30 days<br>
-                        -Must have the reciept<br>
-                        -Delievery charges may apply to online orders</p>
+
+                    <ul id="exchange" class="footerText collapse">
+                        <li>Products are eligble for exchange and return up to 30 days</li>
+                        <li>Must have the reciept</li>
+                        <li>Products must be in the same condition as it was recieved</li>
+                        <li>Delievery charges may apply to online orders</li>
+                    </ul>
+
+
                 </div>
                 <div class="col-md-3">
                     <button data-target="#followus" class="btn btn-white dropdown-toggle btn-block btnstyle"
                         type="button" data-toggle="collapse">Social</button>
-                    <p id="followus" class="footerText collapse"><a class="footerAnchor" href="">
+                    <p id="followus" class="footerText collapse">
+                        <a class="footerAnchor" href="https://www.facebook.com/minimeez.store">
                             <i class="bi bi-facebook"> Facebook</i> </a>
                         <br>
-                        <a class="footerAnchor" href="">
+                        <a class="footerAnchor" href="https://www.instagram.com/minimeez.store/" target="_blank">
                             <i class="bi bi-instagram"> Instagram</i> </a>
                         <br>
-                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518">
+                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518" target="_blank">
                             <i class="bi bi-whatsapp"> Whatsapp</i> </a>
                         <br>
                         <a class=" footerAnchor"
-                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0">
+                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"
+                            target="_blank">
                             <i class="bi bi-messenger"> Messenger</i> </a>
 
                     </p>
@@ -307,8 +385,10 @@
 
 
 
-
-
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>

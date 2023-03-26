@@ -26,10 +26,12 @@
 
 
 
+
 .card:hover {
     box-shadow: 4px 8px 10px 0 grey;
     transform: scale(1.05);
 }
+
 
 .price {
     color: black;
@@ -45,4 +47,19 @@
 
 .card-anchor {
     text-decoration: none !important;
+}
+
+.heart {
+    color: inherit;
+    color: black !important;
+    text-decoration: none !important;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart:hover {
+    color: red !important;
+    transform: scale(1.3);
+
 }

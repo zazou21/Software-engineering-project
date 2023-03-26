@@ -28,11 +28,18 @@
     }
 
     .price {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0px;
     }
 
     .btn-custom {
-        font-size: 8px;
+        text-align: center;
+        font-size: 6px;
+        width:50%;
+        padding: 4px;
+    }
+    .heart-custom{
+        padding-left: 5px;
+    font-size: 10px;
     }
 }
