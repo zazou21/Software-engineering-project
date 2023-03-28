@@ -42,7 +42,7 @@
 }
 
 .cat-card {
-  
+
     transition: all 0.5s;
 }
 
@@ -63,7 +63,7 @@
     box-sizing: border-box;
     bottom: 0cm;
     transition: 0.5s;
-    
+
 
 }
 
@@ -87,4 +87,8 @@
 
 .cat-card:hover .cat-age {
     visibility: visible;
+}
+
+.heart {
+    padding-top: 7px;
 }

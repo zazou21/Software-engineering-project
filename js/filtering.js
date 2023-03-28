@@ -36,18 +36,18 @@ function filtercards() {
 
     function diplayfilteredcards(filteredcards) {
         var container = document.querySelector(".container");
-        var filteredcontainer = document.createElement("div");//creating a new div for the sorted cards
-        filteredcontainer.className = "row gy-3";//adding bootstrap classes
+        var filteredcontainer = document.createElement("div");
+        filteredcontainer.className = "row gy-3";
 
         for (var i = 0; i < filteredcards.length; i++) {
-            var col = document.createElement("div");//creating a new div for each card
-            col.className = "col-12 col-md-6 col-lg-4 col-xl-3";//adding bootstrap classes
-            col.appendChild(filteredcards[i]);//adding card to the div
-            filteredcontainer.appendChild(col);//adding the div to the container
+            var col = document.createElement("div");
+            col.className = "col-12 col-md-6 col-lg-4 col-xl-3";
+            col.appendChild(filteredcards[i]);
+            filteredcontainer.appendChild(col);
         }
 
-        container.innerHTML = "";//removing the original cards
-        container.appendChild(filteredcontainer);//adding the sorted cards
+        container.innerHTML = "";
+        container.appendChild(filteredcontainer);
     }
     function displayoriginalcards() {
         var container = document.querySelector(".container");

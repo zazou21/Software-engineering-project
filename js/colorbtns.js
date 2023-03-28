@@ -1,6 +1,6 @@
-
-
 //make the smallimg replace the bigimg when clicked
+
+
 //1 using btns selection
 var smallimgs = document.querySelectorAll(".smallimg");
 var bigimg = document.querySelector(".bigimg");
