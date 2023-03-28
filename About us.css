@@ -1,0 +1,109 @@
+.header5 {
+  margin-top: 2cm;
+  color: white;
+  text-align: center;
+  font-family: "Edwardian Script ITC";
+  font-size: 60px;
+  text-rendering: optimizeLegibility;
+}
+
+.header4 {
+  margin-left: 0.6cm;
+  margin-top: 4px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+.smallparagraph {
+  margin-left: 0.6cm;
+  font-size: 12px;
+  color: white;
+  line-height: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: bold;
+}
+
+.header3 {
+  margin-left: 0.6cm;
+  margin-top: 0.7cm;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+.paragraph1 {
+  margin-left: 1cm;
+  margin-top: 1cm;
+  font-size: 12px;
+  color: white;
+  line-height: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: bold;
+}
+
+.paragraph {
+  margin-top: 0.5cm;
+  margin-left: 1cm;
+}
+
+.header2 {
+  font-weight: 700;
+  color: white;
+  margin-top: 1.5cm;
+  margin-left: 1cm;
+  text-align: left;
+
+}
+
+.first {
+  background-color: #3E9197;
+
+}
+
+.firstCol {
+  background-color: #1F90AB;
+  margin-top: 30px;
+  margin-right: 0px;
+  height: 20cm;
+  width: 20cm;
+}
+
+#ogo {
+  display: block;
+  width: 6cm;
+  height: 5cm;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+
+.Header1 {
+  text-align: center;
+  color: #008fbe;
+  font-weight: bolder;
+  margin-top: 70px;
+  margin-bottom: 2cm;
+}
+
+#boy {
+  width: 102.1%;
+  height: 100%;
+  margin-right: 0cm;
+  margin-left: 0cm;
+
+}
+
+.secondCol {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+.row {
+  padding: 0px;
+  margin: 0px;
+}
