@@ -1,5 +1,5 @@
 //make the smallimg replace the bigimg when clicked
-
+//the user can achieve this by clicking on the smallimg or the radiobtn
 
 //1 using btns selection
 var smallimgs = document.querySelectorAll(".smallimg");

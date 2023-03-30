@@ -1,4 +1,5 @@
 //make the size chart button toggle the size chart image
+//normally it is hidden
 const showsizechartbtn = document.querySelector(".showsizechart");
 const sizechartimg = document.querySelector(".sizechart");
 sizechartimg.style.display = "none";

@@ -1,3 +1,7 @@
+//the idea is to add all the cards to an array then sort the array
+//we delete the original cards from the container and add the sorted cards to the container
+//the original cards are stored in variable in case we want to display them again(default)
+
 document.getElementById("select").addEventListener("change", sortcards);
 var originalCards = document.querySelectorAll(".card");
 
@@ -27,7 +31,7 @@ function sortcards() {
         displayoriginalcards();
     }
 }
-
+//making sure that the added cards have the same format as the original cards when added
 function diplaysortedcards(sortedCards) {
     var container = document.querySelector(".container");
     var sortedContainer = document.createElement("div");

@@ -1,3 +1,8 @@
+//the idea is to add all the cards to an array anc check for the class
+//in html each card has either a female or male class(how we distiguish between the cards)
+//we delete the original cards from the container and add the sfiltered cards to the container
+//the original cards are stored in variable in case we want to display them again(default)
+
 document.getElementById("select2").addEventListener("change", filtercards);
 var orgcards = document.querySelectorAll(".card");
 

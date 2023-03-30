@@ -1,3 +1,4 @@
+//quantity counter
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
 const number = document.querySelector(".number");
