@@ -19,31 +19,17 @@
     transform: translateY(-50%);
 }
 
-.caption {
-    color: white;
-
-}
-
-.caption:hover {
-    text-decoration: none;
-    color: black;
-}
-
-
 
 
 
 
 .homePageTitles {
     text-align: center;
-    font-size: 30px;
-    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
     margin-top: 1cm;
+    font-family: 'Tajawal', sans-serif;
 }
-
-
-
-/* for the zoom effect of the image */
 
 
 
@@ -53,4 +39,56 @@
     height: 15cm;
 
 
+}
+
+.cat-card {
+
+    transition: all 0.5s;
+}
+
+.cat-card img {
+    width: 5cm;
+    height: 5cm;
+
+
+}
+
+.cat-text {
+    width: 5cm;
+    height: 1cm;
+    padding-left: 10px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0cm;
+    transition: 0.5s;
+
+
+}
+
+.cat-age {
+    visibility: hidden;
+}
+
+
+
+.cat-card:hover .cat-text {
+    cursor: pointer;
+    height: 2cm;
+    transition: 0.5s;
+
+
+}
+
+.cat-card:hover {
+    transform: scale(1.1);
+}
+
+.cat-card:hover .cat-age {
+    visibility: visible;
+}
+
+.heart {
+    padding-top: 7px;
 }

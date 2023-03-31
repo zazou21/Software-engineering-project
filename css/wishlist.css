@@ -1,0 +1,24 @@
+.delete {
+
+    color: black !important;
+    text-decoration: none !important;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.delete:hover {
+    color: red !important;
+    transform: scale(1.3);
+    fill: #0786da;
+
+
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 1cm;
+    font-family: 'Tajawal', sans-serif;
+}

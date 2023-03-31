@@ -18,8 +18,8 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="home.html">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">
                 <img id="logo" src="img/logo.png" alt="logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -35,17 +35,23 @@
                             Shop
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="infants.html">Infants (0-1 yr)</a></li>
+                            <li><a class="dropdown-item" href="infants.html"> Baby </a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="toddlers.html">Toddlers (2-4 yrs)</a></li>
+                            <li><a class="dropdown-item" href="toddlers.html"> Toddlers </a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="preteens.html">pre-teens (5-12 yrs)</a></li>
+                            <li><a class="dropdown-item" href="children.html"> Children </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accessories.html"> Accessories </a></li>
+
 
                         </ul>
                     </li>
@@ -53,12 +59,21 @@
                         <a class="nav-link" href="MyAccount.html">My Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="Aboutus.html">About us</a>
                     </li>
                 </ul>
             </div>
             <li class="navbar-nav nav-item">
-                <a href="cart.html" class="nav-link bi bi-cart"></a>
+                <div style="display: flex">
+
+                    <a href="minimeezCart.html" class="nav-link bi bi-cart nav-icon"></a>
+
+                    <a href="wishlist.html" class="nav-link bi bi-suit-heart nav-icon"></a>
+
+                </div>
+
+
+
             </li>
 
         </nav>
@@ -73,63 +88,73 @@
                 </div>
                 <div class="col-lg-6 px-5 pt-5">
                     <h2 class="font-weight-bold py-2">Sign up to start shopping</h2>
-                    <form class="needs-validation">
-                        <div class="form-group form-row was-validated">
+                    <form id="form">
+                        <div class="form-group form-row">
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" placeholder="First Name" required>
-                                <div class="invalid-feedback">
-                                    please enter your first name
+                                <input id="firstName" type="text" class="form-control" placeholder="First Name">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
+
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" placeholder="Second Name" required>
-                                <div class="invalid-feedback">
-                                    please enter your second name
+                                <input id="lastName" type="text" class="form-control" placeholder="Last Name">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-row was-validated">
+                        <div class="form-group form-row">
                             <div class="col-lg-10">
-                                <input type="email" class="form-control" placeholder="Email" required>
-                                <div class="invalid-feedback">
-                                    please enter a valid email
+                                <input id="email" type="text" class="form-control" placeholder="Email">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-row was-validated">
+                        <div class="form-group form-row">
                             <div class="col-lg-5">
-                                <input type="password" class="form-control" placeholder="Password" required>
-                                <div class="invalid-feedback">
-                                    please enter your password
+                                <input id="password" type="password" class="form-control" placeholder="Password">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <input type="password" class="form-control" placeholder="Confirm Password" required>
-                                <div class="invalid-feedback">
-                                    please confirm your password
+                                <input id="confirmpassword" type="password" class="form-control"
+                                    placeholder="Confirm Password">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-row was-validated">
+                        <div class="form-group form-row">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" placeholder="Address" required>
-                                <div class="invalid-feedback">
-                                    please enter your Address
+                                <input id="address" type="text" class="form-control" placeholder="Address">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-row was-validated">
+                        <div class="form-group form-row">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" placeholder="Phone number" required>
-                                <div class="invalid-feedback">
-                                    please enter phone number
+                                <input id="number" type="text" class="form-control" placeholder="Phone number">
+                                <div style="display: flex;">
+                                    <i class="bi bi-exclamation-circle"></i>
+                                    <div class="errorMessage"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group form-row">
                             <div class="col-lg-10">
-                                <button style="width: 100%;" type="button" class="btn btn-dark">sign up</button>
+                                <button id="submit" style="width: 100%;" type="button" class="btn btn-dark">sign
+                                    up</button>
                             </div>
                         </div>
 
@@ -147,25 +172,25 @@
 
 
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-light text-light">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-3">
-
-                    <button data-target="#address" class="btn btn-dark dropdown-toggle btn-block" type="button"
-                        data-toggle="collapse">Address</button>
-                    <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
+                    <button data-target="#addressfooter" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Address</button>
+                    <p id="addressfooter" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
                         Egypt <br>
                         <a class="footerAnchor"
-                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583">
+                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583"
+                            target="_blank">
                             <i class="bi bi-geo-alt-fill"> Google Maps</i></a>
 
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#contactinfo" class="btn btn-dark dropdown-toggle btn-block" type="button"
-                        data-toggle="collapse">Contact Info</button>
+                    <button data-target="#contactinfo" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Contact Info</button>
                     <p id="contactinfo" class="footerText collapse">
                         <a class="footerAnchor" href="">
                             <i class="bi bi-telephone-fill"> +20 220298491</i></a>
@@ -175,44 +200,54 @@
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#exchange" class="btn btn-dark dropdown-toggle btn-block" type="button"
-                        data-toggle="collapse">Return & Exchange policy</button>
-                    <p id="exchange" class="footerText collapse">-products are eligble for exchange and reutun
-                        up to 30 days<br>
-                        -must have the reciept<br>
-                        -delievery charges may apply to online orders</p>
+                    <button data-target="#exchange" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Return & Exchange policy</button>
+
+                    <ul id="exchange" class="footerText collapse">
+                        <li>Products are eligble for exchange and return up to 30 days</li>
+                        <li>Must have the reciept</li>
+                        <li>Products must be in the same condition as it was recieved</li>
+                        <li>Delievery charges may apply to online orders</li>
+                    </ul>
+
+
                 </div>
                 <div class="col-md-3">
-                    <button data-target="#followus" class="btn btn-dark dropdown-toggle btn-block" type="button"
-                        data-toggle="collapse">Social</button>
-                    <p id="followus" class="footerText collapse"><a class="footerAnchor" href="">
+                    <button data-target="#followus" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Social</button>
+                    <p id="followus" class="footerText collapse">
+                        <a class="footerAnchor" href="https://www.facebook.com/minimeez.store">
                             <i class="bi bi-facebook"> Facebook</i> </a>
                         <br>
-                        <a class="footerAnchor" href="">
+                        <a class="footerAnchor" href="https://www.instagram.com/minimeez.store/" target="_blank">
                             <i class="bi bi-instagram"> Instagram</i> </a>
                         <br>
-                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518">
+                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518" target="_blank">
                             <i class="bi bi-whatsapp"> Whatsapp</i> </a>
                         <br>
                         <a class=" footerAnchor"
-                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0">
+                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"
+                            target="_blank">
                             <i class="bi bi-messenger"> Messenger</i> </a>
 
                     </p>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div id="abovenavbar" class="bg-dark ">
-                            <p>shipping everywhere in egypt <i class="bi bi-truck">
+                        <div id="abovenavbar">
+                            <p> Shipping everywhere in egypt <i class="bi bi-truck">
                                 </i></p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/regiserformvalidation.js"></script>
 
 
 </body>

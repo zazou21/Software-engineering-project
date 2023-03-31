@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #c6c9cd;
+    background-color: white;
 
 }
 
@@ -39,4 +39,30 @@ img {
 
 #div {
     height: min-content;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.error input {
+    border-color: red;
+    border-width: 1.5px;
+}
+
+
+.success input {
+    border-color: rgb(24, 186, 24);
+    border-width: 1.5px;
+
+}
+
+.bi-exclamation-circle {
+    display: none !important;
+}
+
+.error .bi-exclamation-circle {
+    display: block !important;
+    padding-right: 2px;
 }

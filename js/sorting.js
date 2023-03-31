@@ -1,14 +1,18 @@
+//the idea is to add all the cards to an array then sort the array
+//we delete the original cards from the container and add the sorted cards to the container
+//the original cards are stored in variable in case we want to display them again(default)
+
 document.getElementById("select").addEventListener("change", sortcards);
-var originalCards = document.querySelectorAll(".card");//org cards before changing the order
+var originalCards = document.querySelectorAll(".card");
 
 function sortcards() {
-    var option = document.getElementById("select").value;//get the value of the selected option
+    var option = document.getElementById("select").value;
 
     if (option == "Low to high") {
         var cards = document.querySelectorAll(".card");
-        var sortedCards = Array.from(cards);//array of array-like object(cards)
+        var sortedCards = Array.from(cards);
 
-        //this function returns a -ve num if a < b, 0 if a = b, and a +ve num if a > b
+
         sortedCards.sort(function (a, b) {
             return parseInt(a.querySelector(".price").textContent) - parseInt(b.querySelector(".price").textContent);//text content of the price
         });
@@ -27,21 +31,21 @@ function sortcards() {
         displayoriginalcards();
     }
 }
-
+//making sure that the added cards have the same format as the original cards when added
 function diplaysortedcards(sortedCards) {
     var container = document.querySelector(".container");
-    var sortedContainer = document.createElement("div");//creating a new div for the sorted cards
-    sortedContainer.className = "row gy-3";//adding bootstrap classes
+    var sortedContainer = document.createElement("div");
+    sortedContainer.className = "row gy-3";
 
     for (var i = 0; i < sortedCards.length; i++) {
-        var col = document.createElement("div");//creating a new div for each card
-        col.className = "col-12 col-md-6 col-lg-4 col-xl-3";//adding bootstrap classes
-        col.appendChild(sortedCards[i]);//adding card to the div
-        sortedContainer.appendChild(col);//adding the div to the container
+        var col = document.createElement("div");
+        col.className = "col-12 col-md-6 col-lg-4 col-xl-3";
+        col.appendChild(sortedCards[i]);
+        sortedContainer.appendChild(col);
     }
 
-    container.innerHTML = "";//removing the original cards
-    container.appendChild(sortedContainer);//adding the sorted cards
+    container.innerHTML = "";
+    container.appendChild(sortedContainer);
 }
 
 function displayoriginalcards() {
