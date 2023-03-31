@@ -29,7 +29,7 @@ function checkEmail(input) {
     if (emailformat.test(emailValue)) {
         showSuccess(input);
     } else {
-        showError(input, "Email is not valid");
+        showError(input, "Email is not valid, Correct Format: ***@***.***");
     }
 }
 
