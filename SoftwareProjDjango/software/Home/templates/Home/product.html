@@ -1,0 +1,175 @@
+{% extends 'Home/base.html' %}
+{% block changes %}
+<div class="container">
+    <div class="row m-3">
+        <div class="col-9 col-lg-4">
+            <img src="img/redshirt.jpg" class="img-fluid  m-3 bigimg" alt="...">
+        </div>
+        <div class="col-3 col-lg-2">
+            <img src="img/redshirt.jpg" class="img-fluid  m-3 smallimg red" alt="...">
+            <img src="img/blueshirt.jpg" class="img-fluid  m-3 smallimg blue" alt="...">
+            <img src="img/greenshirt.jpg" class="img-fluid  m-3 smallimg green" alt="...">
+            <img src="img/yellowshirt.jpg" class="img-fluid  m-3 smallimg yellow" alt="...">
+
+
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="my-3s">Shirt</h1>
+            <h4>size</h4>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-dark mr-2" for="btnradio1">S</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio2">M</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio3">L</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio4">XL</label>
+            </div>
+
+
+            <p>not sure of your size, <a class="showsizechart">check size chart</a></p>
+
+
+
+            <img src="img/sizechart.jpg" class="sizechart">
+
+
+
+            <h4>color</h4>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio5" autocomplete="off"
+                    checked>
+                <label class="btn btn-outline-dark mr-2" for="btnradio5">Red</label>
+
+                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio6">Blue</label>
+
+                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio7" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio7">Green</label>
+
+                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio8" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="btnradio8">Yellow</label>
+            </div>
+            <br>
+            <br>
+            <h4>Quantity</h4>
+            <div class="counter">
+                <span class="minus">-</span>
+                <span class="number">01</span>
+                <span class="plus">+</span>
+            </div>
+            <br>
+
+
+            <h5>EGP 100</h5>
+
+            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+            </button>
+        </div>
+
+    </div>
+    <div class="row justify-content-center text-center">
+        <h1 class="titles">you might also like</h1>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto ">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/pants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">pants</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">230</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/jacket.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Jacket</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">530</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">dress</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">330</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/skirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">skirt</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">330</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {%endblock%}

@@ -1,0 +1,94 @@
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.carousel-inner {
+    padding: 0.5cm;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(112, 110, 110);
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.homePageTitles {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 1cm;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+
+
+.pic-size {
+    width: 20cm;
+    height: 15cm;
+
+
+}
+
+.cat-card {
+
+    transition: all 0.5s;
+}
+
+.cat-card img {
+    width: 5cm;
+    height: 5cm;
+
+
+}
+
+.cat-text {
+    width: 5cm;
+    height: 1cm;
+    padding-left: 10px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0cm;
+    transition: 0.5s;
+
+
+}
+
+.cat-age {
+    visibility: hidden;
+}
+
+
+
+.cat-card:hover .cat-text {
+    cursor: pointer;
+    height: 2cm;
+    transition: 0.5s;
+
+
+}
+
+.cat-card:hover {
+    transform: scale(1.1);
+}
+
+.cat-card:hover .cat-age {
+    visibility: visible;
+}
+
+.heart {
+    padding-top: 7px;
+}

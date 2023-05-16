@@ -1,0 +1,50 @@
+{% extends 'Home/base.html' %}
+
+{% block changes %}
+{% if user.is_authenticated %}
+<form action="" method="post">
+    {%csrf_token%} 
+    <input type="submit" name="upvote" value="logout" />
+</form>
+
+{% else %}
+<div id="div" class="Form my-4 mx-5">
+    <div class="container">
+        <div id="firstrow" class="row no-gutters">
+            <div class="col-lg-4">
+                <img src="img/kids.jpg" alt="kids" class="img-fluid">
+            </div>
+            <form action="" method="POST">
+                {%csrf_token%}
+            
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="text" class="form-control" name="username">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control"  name="password">
+                </div>
+              
+                <input type="submit" value ="login" class="btn btn-secondary"> 
+            
+             
+                   
+                   
+                    <a class="Anchor" href="{% url 'Forgetpass' %}">Forgot Password?</a>
+                    <br>
+                    <p class="text">Don't have an account? <a class="Anchor" href="{% url 'Register' %}">Register here</a>
+                    </p>
+                
+
+            </div>
+        </form>
+
+        </div>
+    </div>
+</div>
+
+{% endif %}
+{% endblock %}
+

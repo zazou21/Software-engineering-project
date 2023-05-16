@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+
+}
+
+.Anchor {
+    color: #929699;
+    text-decoration: none !important;
+}
+
+.Anchor:hover {
+    color: #d7dadc;
+}
+
+
+
+
+.Text {
+    color: #929699
+}
+
+#firstrow {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 12px gray;
+}
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+#div {
+    height: min-content;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.error input {
+    border-color: red;
+    border-width: 1.5px;
+}
+
+
+.success input {
+    border-color: rgb(24, 186, 24);
+    border-width: 1.5px;
+
+}
+
+.bi-exclamation-circle {
+    display: none !important;
+}
+
+.error .bi-exclamation-circle {
+    display: block !important;
+    padding-right: 2px;
+}

@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+  
+
+
+    <title>Home</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="{% static 'Home/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/home.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/headerfooter.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/cards.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/smallcards.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/AboutUs.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/cart.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/myaccount.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/wishlist.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/children.css' %}">
+    <link rel="stylesheet" href="{% static 'Home/product.css' %}">
+
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap" rel="stylesheet"> -->
+    
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'baby' %}"> Baby </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="toddlers.html"> Toddlers </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{% url 'children' %}"> Children </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accessories.html"> Accessories </a></li>
+
+
+                        </ul>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Sign out</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Myaccount' %}">Sign in</a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about-us' %}">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <li class="navbar-nav nav-item">
+                <div style="display: flex">
+
+                    <a href="{% url 'Cart' %}" class="nav-link bi bi-cart nav-icon"></a>
+
+                    <a href="{% url 'Wishlist' %}" class="nav-link bi bi-suit-heart nav-icon"></a>
+
+                </div>
+
+
+
+            </li>
+
+        </nav>
+    </header>
+    {% block changes %}
+
+
+
+    {% endblock %}
+    <footer class="bg-light text-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button data-target="#address" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Address</button>
+                    <p id="address" class="footerText collapse">Al-Rehab Mall, Cairo Governorate,
+                        Egypt <br>
+                        <a class="footerAnchor"
+                            href="https://www.google.com/maps/place/minimeez/@30.061669,31.4796696,17z/data=!3m1!4b1!4m5!3m4!1s0x14581950b1af6ef9:0xc1fc5ff84905410f!8m2!3d30.061669!4d31.4818583"
+                            target="_blank">
+                            <i class="bi bi-geo-alt-fill"> Google Maps</i></a>
+
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#contactinfo" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Contact Info</button>
+                    <p id="contactinfo" class="footerText collapse">
+                        <a class="footerAnchor" href="">
+                            <i class="bi bi-telephone-fill"> +20 220298491</i></a>
+                        <br>
+                        <a class="footerAnchor" href="">
+                            <i class="bi bi-envelope-at-fill"></i> management@mini-me.us</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#exchange" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Return & Exchange policy</button>
+
+                    <ul id="exchange" class="footerText collapse">
+                        <li>Products are eligble for exchange and return up to 30 days</li>
+                        <li>Must have the reciept</li>
+                        <li>Products must be in the same condition as it was recieved</li>
+                        <li>Delievery charges may apply to online orders</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-md-3">
+                    <button data-target="#followus" class="btn btn-white dropdown-toggle btn-block btnstyle"
+                        type="button" data-toggle="collapse">Social</button>
+                    <p id="followus" class="footerText collapse">
+                        <a class="footerAnchor" href="https://www.facebook.com/minimeez.store">
+                            <i class="bi bi-facebook"> Facebook</i> </a>
+                        <br>
+                        <a class="footerAnchor" href="https://www.instagram.com/minimeez.store/" target="_blank">
+                            <i class="bi bi-instagram"> Instagram</i> </a>
+                        <br>
+                        <a class="footerAnchor" href="https://api.whatsapp.com/send?phone=01555385518" target="_blank">
+                            <i class="bi bi-whatsapp"> Whatsapp</i> </a>
+                        <br>
+                        <a class=" footerAnchor"
+                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F220121902207763%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"
+                            target="_blank">
+                            <i class="bi bi-messenger"> Messenger</i> </a>
+
+                    </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div id="abovenavbar">
+                            <p> Shipping everywhere in egypt <i class="bi bi-truck">
+                                </i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+    <script src="{% static 'Home/cart.js' %}" async></script>
+   <!-- <script src="{% static 'Home/signinformvalidation.js' %}"></script> -->
+    <script src="{% static 'Home/regiserformvalidation.js' %}"></script>
+    <script src="{% static 'Home/sorting.js' %}"></script>
+    <script src="{% static 'Home/jquery-3.6.3.min.js'%}"></script>
+    <script src="{% static 'Home/bootstrap.js' %}"></script>
+    <script src="{% static 'Home/popper.min.js' %}"></script>
+  
+    
+    <script src="{% static 'Home/colorbtns.js' %}"></script>
+    <script src="{% static 'Home/counter.js' %}" async></script>
+    <script src="{% static 'Home/stopredirect.js' %}" async></script>
+    <script src="{% static 'Home/sizeChartToggle.js' %}" async></script>
+    <script src="{% static 'Home/filtering.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    
+ <script>    //change the selected filtering option
+    var select = document.getElementById('select2');
+    select.selectedIndex = 1;
+    select.dispatchEvent(new Event('change'));
+</script></script>
+</script>
+  
+    
+
+
+
+
+
+</body>
+
+</html>

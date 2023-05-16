@@ -1,0 +1,436 @@
+{% extends 'Home/base.html' %}
+{% block changes %}
+<div class="container">
+    
+    <div class="row">
+        <p class="homePageTitles">SHOP BY CATEGORY</p>
+        <div class="col-6 col-lg-3 my-3">
+            <a href="{% url 'baby' %}">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/babyboy.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Baby-Boy</p>
+                        <p class="cat-age">1-2 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 my-3">
+            <a href="{% url 'baby' %}">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/babygirl.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Baby-Girl</p>
+                        <p class="cat-age">1-2 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 my-3">
+            <a href="">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/toddlerboy.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Toddler-Boy</p>
+                        <p class="cat-age">3-5 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 my-3">
+            <a href="">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/toddlergirl.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Toddler-Girl</p>
+                        <p class="cat-age">3-5 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-lg-4 my-3">
+            <a href="{% url 'Boy' %}">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/boy.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Boys</p>
+                        <p class="cat-age">6-10 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-4 my-3">
+            <a href="{% url 'girl' %}">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/girl.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Girls</p>
+                        <p class="cat-age">6-10 years old</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-4 my-3"> <a href="">
+                <div class="cat-card d-flex justify-content-center align-items-center">
+                    <img src="img/accessories.jpg" alt="">
+                    <div class="cat-text">
+                        <p>Accessories</p>
+                        <p class="cat-age">all ages</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- second row -->
+<div class="row">
+    <div class="col">
+
+        <p class="homePageTitles">NEW ARRIVALS</p>
+
+
+        <div class="container">
+            <div id="NewArrivals" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- first item -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/redshirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/short.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Short</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Dress</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/pants.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Pants</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- second item -->
+                    <div class="carousel-item  active">
+                        <div class="cards-wrapper">
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/skirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Skirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/yellowshirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/jacket.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Jacket</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">dress</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+
+                    <a href="#NewArrivals" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <a href="#NewArrivals" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- third row -->
+<div class="row">
+    <div class="col">
+
+        <p class="homePageTitles">BEST SELLERS</p>
+
+
+        <div class="container">
+            <div id="BestSellers" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- first item -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/redshirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/short.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Short</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Dress</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/pants.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Pants</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- second item -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/skirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Skirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/yellowshirt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Shirt</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/jacket.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">Jacket</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> <a class="card-anchor" href="{% url 'product' %}">
+                                <div class="card">
+                                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">dress</p>
+                                        <p class="price">EGP 200</p>
+                                        <div class="justify-content-center" style="display: flex">
+                                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                                            </button>
+                                            <a href="#">
+                                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+
+                    <a href="#BestSellers" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <a href="#BestSellers" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+
+

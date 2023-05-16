@@ -1,0 +1,137 @@
+{% extends 'Home/base.html' %}
+
+{% block changes %}
+<div class="view">
+    <div class="row">
+        <p class="children">Baby</p>
+        <div class="col-4 col-lg-1">
+            <p class="titles">Sort</p>
+        </div>
+        <div class="col-8 col-lg-3">
+            <select id="select" class="form-select" aria-label="Default select example">
+                <option>Default</option>
+                <option>Low to high</option>
+                <option>High to low</option>
+            </select>
+
+        </div>
+        <div class="col-4 col-lg-1">
+            <p class="titles">Filter</p>
+        </div>
+        <div class="col-8 col-lg-3">
+
+
+            <select id="select2" class="form-select" aria-label="Default select example">
+                <option>Default</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+        </div>
+    </div>
+
+
+    <hr>
+
+<div class="container text-center">
+    <div class="row gy-3 ">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto male">
+                <a class="card-anchor" href="product.html">
+                    <img src="img/redshirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">shirt</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">620</p>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                            </button>
+                            <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto male">
+                <a class="card-anchor" href="product.html">
+                    <img src="img/short.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">short</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">260</p>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+                            <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto female">
+                <a class="card-anchor" href="product.html">
+                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">dress</p>
+
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">500</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+
+                            <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto female">
+                <a class="card-anchor" href="product.html">
+                    <img src="img/skirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">skirt</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">330</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+
+                            <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
