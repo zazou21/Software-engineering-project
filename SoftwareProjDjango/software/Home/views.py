@@ -1,16 +1,25 @@
 from django.shortcuts import render,redirect
+from django import forms
+from django.forms.forms import Form  
 from django.http import HttpResponse
 from django.contrib.auth import login,logout,authenticate
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
+from .forms import registration
 # Create your views here.
 
-types=["Baby-boy","Baby-girl","Toddler boy","Toddler girl","Boys","Girls"]
+
+class NewForm(forms.Form):
+    username=forms.CharField(label="username")
+    password=forms.CharField(label="password")
+
+     
+ 
 
 
 def Homepage(request):
     return render(request,'Home/index.html',{
-        "types":types
+        
     })
 
 def aboutus(request):
@@ -43,7 +52,7 @@ def Myaccount(request):
         
 def logout_user(request):
      logout(request)
-     return redirect('Myaccount')
+     return redirect('home')
 
    
     
@@ -76,5 +85,22 @@ def product(request):
 def baby(request):
     return render(request, 'Home/baby.html')
 
-def register(request):
-    render (request,'Home/register.html')
+def register_user(request):
+    if request.method == 'POST':
+        Form=registration(request.POST)
+        if Form.is_valid():
+            Form.save()
+            username=Form.cleaned_data['username']
+            password=Form.cleaned_data['password1']
+            user=authenticate(request,username=username,password=password)
+            login(request,user)
+            return redirect('home')
+
+    else:
+        Form=registration()   
+
+    return render(request,'Home/register.html',{'Form':Form})
+        
+        
+        
+     
