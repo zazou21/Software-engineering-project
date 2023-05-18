@@ -1,8 +1,9 @@
 {% extends 'Home/base.html' %}
+{% load static %}
 {% block changes %}
 <div class="row first">
     <div class="col">
-        <img src="img/logo.png" alt="Minimeez logo" id="ogo">
+        <img src="{% static 'Home/logo.png' %}" alt="Minimeez logo" id="ogo">
         <h2 style="color: white;" class="text-center my-5">because our kids deserve the best</h2>
     </div>
 </div>
@@ -62,7 +63,7 @@
     </div>
 
     <div class="col-12 col-lg-6 secondCol">
-        <img src="img/boy.jpg" alt="el 3ayel el soghyr" id="boy">
+        <img src="{% static 'Home/boy.jpg' %}" alt="el 3ayel el soghyr" id="boy">
     </div>
 </div>
 
