@@ -1,9 +1,10 @@
 {% extends 'Home/base.html' %}
+{% load static %}
 {% block changes %}
 <div class="container">
     <div class="row m-3">
         <div class="col-9 col-lg-4">
-            <img src="img/redshirt.jpg" class="img-fluid  m-3 bigimg" alt="...">
+            <img src="{{child_img}}" class="img-fluid  m-3 bigimg" alt="...">
         </div>
         <div class="col-3 col-lg-2">
             <img src="img/redshirt.jpg" class="img-fluid  m-3 smallimg red" alt="...">
@@ -14,7 +15,7 @@
 
         </div>
         <div class="col-12 col-lg-6">
-            <h1 class="my-3s">Shirt</h1>
+            <h1 class="my-3s">{{child_name}}</h1>
             <h4>size</h4>
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -41,18 +42,10 @@
 
             <h4>color</h4>
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio5" autocomplete="off"
-                    checked>
-                <label class="btn btn-outline-dark mr-2" for="btnradio5">Red</label>
-
-                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio6" autocomplete="off">
-                <label class="btn btn-outline-dark mr-2" for="btnradio6">Blue</label>
-
-                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio7" autocomplete="off">
-                <label class="btn btn-outline-dark mr-2" for="btnradio7">Green</label>
-
-                <input type="radio" class="btn-check radiobtn" name="btnradio2" id="btnradio8" autocomplete="off">
-                <label class="btn btn-outline-dark mr-2" for="btnradio8">Yellow</label>
+                {% for color in colors %}
+                <input type="radio" class="btn-check" name="color" id="color{{ color.id }}" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="color{{ color.id }}">{{ color.color }}</label>
+                {% endfor %}
             </div>
             <br>
             <br>
@@ -65,7 +58,7 @@
             <br>
 
 
-            <h5>EGP 100</h5>
+            <h5>EGP {{child_price}}</h5>
 
             <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
             </button>

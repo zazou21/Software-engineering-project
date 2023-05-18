@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import get_object_or_404, render,redirect
 from django import forms
 from django.forms.forms import Form  
 from django.http import HttpResponse
@@ -6,6 +6,8 @@ from django.contrib.auth import login,logout,authenticate
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from .forms import registration
+from .models import *
+from django.views.generic import ListView
 # Create your views here.
 
 
@@ -26,8 +28,11 @@ def aboutus(request):
     return render(request,'Home/aboutus.html')
 
 
-def Cart(request):
-    return render(request,'Home/cart.html')
+def cart(request):
+    cartobjects=Cart.objects.filter()
+
+
+    return render(request,'Home/cart.html',{'cartobjects':cartobjects})
 
 def Myaccount(request):
     if (request.method=="POST") and (not request.user.is_authenticated) :
@@ -40,11 +45,31 @@ def Myaccount(request):
            return redirect('home')
        
         else:
-           messages.success(request,"log in failed")
+           messages.success(request,"Login failed")
            return redirect('Myaccount')
     else:
         
         return render(request, 'Home/myaccount.html')
+    
+
+class childrenproductListView(ListView):
+    model=childrenproduct
+    context_object_name='children'
+
+def h(request):
+    return render(request,'Home/h.html')
+
+def product_view(request,child_name,child_price,child_img,child_productID):
+    product = get_object_or_404(childrenproduct, productID=child_productID)
+    context = {
+        'child_name': child_name,
+        'child_price': child_price,
+        'child_img': child_img,
+        'product': product,
+        'colors': product.product_attributes.first().colors.all()
+       
+    }
+    return render(request, 'Home/product.html', context)
     
     
 
