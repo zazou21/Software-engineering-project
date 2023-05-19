@@ -130,9 +130,26 @@ def addToCart(request):
     if request.method=='POST':
         if request.user.is_authenticated:
             prod_id=int(request.POST.get('product_id'))
-            Cart.objects.create(user=request.user,product_id=prod_id)
+            if(Cart.objects.filter(user=request.user.id,product_id=prod_id)):
+                 messages.success(request,"already in cart")
+            else:     
+                Cart.objects.create(user=request.user,product_id=prod_id)
+        else:
+            messages.success(request,"not logged in")  
+              
     
     return redirect('home')
+
+def removeFromCart(request):
+    if request.method=='POST':
+        prod_id=int(request.POST.get('product_id'))
+        if(Cart.objects.filter(user=request.user.id,product_id=prod_id)):
+            cartitem=Cart.objects.get(product_id=prod_id,user=request.user)
+            cartitem.delete()
+    return redirect('home')
+
+        
+
 
 
 
