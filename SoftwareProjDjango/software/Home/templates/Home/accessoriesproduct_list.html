@@ -1,0 +1,37 @@
+{% extends 'Home/accessories.html' %}
+{% block accessoriescontent %}
+
+{% for a in accessories %}
+ <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+    
+    <div class="card mx-auto {{ a.gender }} ">
+        <a class="card-anchor" href="{% url 'accessories-view' accessories_name=a.name accessories_price=a.price accessories_img=a.img.url accessories_productID=a.productID idddd=a.id %}">
+            <img src="{{ a.img.url }}" class="card-img-top" alt="...">
+            <div class="card-body product_data" >
+                <p class="card-text">{{ a.name }}</p>
+                <div class="cardprice">
+                    <p class="currency">EGP
+                    <p class="price">{{ a.price }}</p>
+                    </p>
+                </div>
+                <br>
+                        {% csrf_token %}
+                <input type="hidden" value="{{ a.id }}" class="prod_id">
+                <div class="justify-content-center" style="display: flex">
+                    
+                        <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                        </button>
+                        <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                    
+                    
+
+                </div>
+
+            </div>
+        </a>
+    </div>
+    
+</div>
+
+{% endfor %}
+{% endblock%}

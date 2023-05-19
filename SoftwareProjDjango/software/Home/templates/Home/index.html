@@ -1,13 +1,14 @@
 {% extends 'Home/base.html' %}
+{% load static %}
 {% block changes %}
 <div class="container">
     
     <div class="row">
         <p class="homePageTitles">SHOP BY CATEGORY</p>
         <div class="col-6 col-lg-3 my-3">
-            <a href="{% url 'baby' %}">
+            <a href="{% url 'boy' %}">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/babyboy.jpg" alt="">
+                    <img src="{% static 'Home/babyboy.jpg' %}" alt="babyboy">
                     <div class="cat-text">
                         <p>Baby-Boy</p>
                         <p class="cat-age">1-2 years old</p>
@@ -18,7 +19,7 @@
         <div class="col-6 col-lg-3 my-3">
             <a href="{% url 'baby' %}">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/babygirl.jpg" alt="">
+                    <img src="{% static 'Home/babygirl.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Baby-Girl</p>
                         <p class="cat-age">1-2 years old</p>
@@ -29,7 +30,7 @@
         <div class="col-6 col-lg-3 my-3">
             <a href="">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/toddlerboy.jpg" alt="">
+                    <img src="{% static 'Home/toddlerboy.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Toddler-Boy</p>
                         <p class="cat-age">3-5 years old</p>
@@ -40,7 +41,7 @@
         <div class="col-6 col-lg-3 my-3">
             <a href="">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/toddlergirl.jpg" alt="">
+                    <img src="{% static 'Home/toddlergirl.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Toddler-Girl</p>
                         <p class="cat-age">3-5 years old</p>
@@ -51,9 +52,9 @@
     </div>
     <div class="row">
         <div class="col-6 col-lg-4 my-3">
-            <a href="{% url 'Boy' %}">
+            <a href="{% url 'boy' %}">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/boy.jpg" alt="">
+                    <img src="{% static 'Home/boy.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Boys</p>
                         <p class="cat-age">6-10 years old</p>
@@ -64,7 +65,7 @@
         <div class="col-6 col-lg-4 my-3">
             <a href="{% url 'girl' %}">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/girl.jpg" alt="">
+                    <img src="{% static 'Home/girl.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Girls</p>
                         <p class="cat-age">6-10 years old</p>
@@ -74,7 +75,7 @@
         </div>
         <div class="col-6 col-lg-4 my-3"> <a href="">
                 <div class="cat-card d-flex justify-content-center align-items-center">
-                    <img src="img/accessories.jpg" alt="">
+                    <img src="{% static 'Home/accessories.jpg' %}" alt="">
                     <div class="cat-text">
                         <p>Accessories</p>
                         <p class="cat-age">all ages</p>

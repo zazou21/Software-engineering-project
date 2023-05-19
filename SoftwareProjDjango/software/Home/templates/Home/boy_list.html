@@ -1,0 +1,37 @@
+{% extends 'Home/boy.html' %}
+{% block contentt %}
+
+{% for child in children %}
+ <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+    
+    <div class="card mx-auto {{ child.gender }} ">
+        <a class="card-anchor" href="{% url 'product-view' child_name=child.name child_price=child.price child_img=child.img.url child_productID=child.productID idd=child.id %}">
+            <img src="{{child.img.url }}" class="card-img-top" alt="...">
+            <div class="card-body product_data" >
+                <p class="card-text">{{ child.name }}</p>
+                <div class="cardprice">
+                    <p class="currency">EGP
+                    <p class="price">{{ child.price }}</p>
+                    </p>
+                </div>
+                <br>
+                        {% csrf_token %}
+                <input type="hidden" value="{{ child.id }}" class="prod_id">
+                <div class="justify-content-center" style="display: flex">
+                    
+                        <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                        </button>
+                        <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                    
+                    
+
+                </div>
+
+            </div>
+        </a>
+    </div>
+    
+</div>
+
+{% endfor %}
+{% endblock%}

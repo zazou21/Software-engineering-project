@@ -1,0 +1,163 @@
+{% extends 'Home/base.html' %}
+{% load static %}
+{% block changes %}
+<div class="container">
+    <div class="row m-3" >
+        <div class="col-9 col-lg-4">
+            <img src="{{accessories_img}}" class="img-fluid  m-3 bigimg" alt="...">
+        </div>
+        <div class="col-3 col-lg-2">
+            <img src="img/redshirt.jpg" class="img-fluid  m-3 smallimg red" alt="...">
+            <img src="img/blueshirt.jpg" class="img-fluid  m-3 smallimg blue" alt="...">
+            <img src="img/greenshirt.jpg" class="img-fluid  m-3 smallimg green" alt="...">
+            <img src="img/yellowshirt.jpg" class="img-fluid  m-3 smallimg yellow" alt="...">
+
+
+        </div>
+        <div class="col-12 col-lg-6 product_data">
+            <h1 class="my-3s">{{accessories_name}}</h1>
+            <h4>size</h4>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                {% for size in sizes %}
+                <input type="radio" class="btn-check" name="btnradio" id="size{{ size.id }}" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="size{{ size.id }}">{{ size.size }}</label>
+                {% endfor %}
+            </div>
+
+
+            <p>not sure of your size, <a class="showsizechart">check size chart</a></p>
+
+
+
+            <img src="img/sizechart.jpg" class="sizechart">
+
+
+
+            <h4>color</h4>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                {% for color in colors %}
+                <input type="radio" class="btn-check" name="color" id="color{{ color.id }}" autocomplete="off">
+                <label class="btn btn-outline-dark mr-2" for="color{{ color.id }}">{{ color.color }}</label>
+                {% endfor %}
+            </div>
+            <br>
+            <br>
+            <h4>Quantity</h4>
+            <div class="counter">
+                <span class="minus">-</span>
+                <span class="number">01</span>
+                <span class="plus">+</span>
+            </div>
+            <br>
+
+
+            <h5>EGP {{accessories_price}}</h5>
+            {% csrf_token %}
+            <input type="hidden" value="{{ iddd }}" class="prod_id">
+
+            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+            </button>
+        </div>
+
+    </div>
+    <div class="row justify-content-center text-center">
+        <h1 class="titles">you might also like</h1>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto ">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/pants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">pants</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">230</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/jacket.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Jacket</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">530</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/dress.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">dress</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">330</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mx-auto">
+                <a class="card-anchor" href="{% url 'product' %}">
+                    <img src="img/skirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">skirt</p>
+                        <div class="cardprice">
+                            <p class="currency">EGP
+                            <p class="price">330</p>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="justify-content-center" style="display: flex">
+                            <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i></button>
+
+                            <a href="#">
+                                <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {%endblock%}

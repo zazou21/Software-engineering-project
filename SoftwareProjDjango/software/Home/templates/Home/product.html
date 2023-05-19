@@ -2,7 +2,7 @@
 {% load static %}
 {% block changes %}
 <div class="container">
-    <div class="row m-3">
+    <div class="row m-3" >
         <div class="col-9 col-lg-4">
             <img src="{{child_img}}" class="img-fluid  m-3 bigimg" alt="...">
         </div>
@@ -14,7 +14,7 @@
 
 
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 product_data">
             <h1 class="my-3s">{{child_name}}</h1>
             <h4>size</h4>
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -24,11 +24,12 @@
                 {% endfor %}
             </div>
 
+
             <p>not sure of your size, <a class="showsizechart">check size chart</a></p>
 
 
 
-            <img src="img/sizechart.jpg" class="sizechart">
+            <img src="{% static "Home/sizechart.jpg" %}" class="sizechart">
 
 
 
@@ -51,6 +52,8 @@
 
 
             <h5>EGP {{child_price}}</h5>
+            {% csrf_token %}
+            <input type="hidden" value="{{ idd }}" class="prod_id">
 
             <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
             </button>

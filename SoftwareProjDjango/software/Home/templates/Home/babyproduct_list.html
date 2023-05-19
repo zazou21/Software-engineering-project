@@ -1,0 +1,37 @@
+{% extends 'Home/baby.html' %}
+{% block babycontent %}
+
+{% for b in baby %}
+ <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+    
+    <div class="card mx-auto {{ b.gender }} ">
+        <a class="card-anchor" href="{% url 'baby-view' baby_name=b.name baby_price=b.price baby_img=b.img.url baby_productID=b.productID iddd=b.id %}">
+            <img src="{{ b.img.url }}" class="card-img-top" alt="...">
+            <div class="card-body product_data" >
+                <p class="card-text">{{ b.name }}</p>
+                <div class="cardprice">
+                    <p class="currency">EGP
+                    <p class="price">{{ b.price }}</p>
+                    </p>
+                </div>
+                <br>
+                        {% csrf_token %}
+                <input type="hidden" value="{{ b.id }}" class="prod_id">
+                <div class="justify-content-center" style="display: flex">
+                    
+                        <button class="add-to-cart">Add to Cart<i class="bi bi-cart2"></i>
+                        </button>
+                        <div class="heart"> <i class="bi bi-suit-heart"></i></div>
+                    
+                    
+
+                </div>
+
+            </div>
+        </a>
+    </div>
+    
+</div>
+
+{% endfor %}
+{% endblock%}
