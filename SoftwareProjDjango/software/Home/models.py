@@ -19,9 +19,18 @@ class Color(models.Model):
     def __str__(self):
         return self.color
     
+
+class Size(models.Model):
+    size = models.CharField(max_length=100)
+    
+
+    def __str__(self):
+        return self.size
+    
 class productAttribute(models.Model):
     product = models.ForeignKey(childrenproduct, on_delete=models.CASCADE,related_name='product_attributes')
     colors = models.ManyToManyField(Color)
+    sizes = models.ManyToManyField(Size)
 
     def __str__(self):
         return self.product.name
@@ -29,9 +38,8 @@ class productAttribute(models.Model):
 
 
 class Cart(models.Model):
-    user=models.ForeignKey(User,on_delete=models.CASCADE,db_constraint=False)
     product = models.ForeignKey(childrenproduct, on_delete=models.CASCADE)
-    product_qty=models.ImageField(null=False,blank=False)
+    
     def __str__(self):
         return self.product.name
     
