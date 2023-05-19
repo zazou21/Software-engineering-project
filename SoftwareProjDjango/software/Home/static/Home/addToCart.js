@@ -17,5 +17,4 @@ $('.add-to-cart').click(function (e) {
             
         }
     });
-    
-});
+})
