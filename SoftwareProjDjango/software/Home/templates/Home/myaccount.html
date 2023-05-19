@@ -1,13 +1,6 @@
 {% extends 'Home/base.html' %}
 
 {% block changes %}
-{% if messages %}  
-<ul>   
-    {% for message in messages %}  
-        <li>{{ message }}</li>  
-        {% endfor %}  
-</ul>   
-{% endif %} 
 {% if user.is_authenticated %}
 <form action="" method="post">
     {%csrf_token%} 
@@ -34,7 +27,7 @@
                   <input type="password" class="form-control"  name="password">
                 </div>
               
-                <input type="submit" value ="Login" class="btn btn-secondary"> 
+                <input type="submit" value ="login" class="btn btn-secondary"> 
             
              
                    
