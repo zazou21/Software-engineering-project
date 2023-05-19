@@ -29,7 +29,7 @@ def aboutus(request):
 
 
 def cart(request):
-    cartobjects=Cart.objects.filter()
+    cartobjects=Cart.objects.filter(user=request.user)
 
 
     return render(request,'Home/cart.html',{'cartobjects':cartobjects})
@@ -125,6 +125,20 @@ def register_user(request):
         Form=registration()   
 
     return render(request,'Home/register.html',{'Form':Form})
+
+def addToCart(request):
+    if request.method=='POST':
+        if request.user.is_authenticated:
+            prod_id=int(request.POST.get('product_id'))
+            Cart.objects.create(user=request.user,product_id=prod_id)
+    
+    return redirect('home')
+
+
+
+
+       
+
         
         
         

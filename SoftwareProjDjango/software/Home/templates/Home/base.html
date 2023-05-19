@@ -98,8 +98,11 @@
             </div>
             <li class="navbar-nav nav-item">
                 <div style="display: flex">
-
+                    {% if user.is_authenticated %}
                     <a href="{% url 'Cart' %}" class="nav-link bi bi-cart nav-icon"></a>
+                    {% else %}
+                    <a href="{% url 'Myaccount' %}" class="nav-link bi bi-cart nav-icon"></a>
+                    {% endif %}
 
                     <a href="{% url 'Wishlist' %}" class="nav-link bi bi-suit-heart nav-icon"></a>
 
@@ -197,7 +200,9 @@
    <!-- <script src="{% static 'Home/signinformvalidation.js' %}"></script> -->
     <script src="{% static 'Home/regiserformvalidation.js' %}"></script>
     <script src="{% static 'Home/sorting.js' %}"></script>
-    <script src="{% static 'Home/jquery-3.6.3.min.js'%}"></script>
+    <script src="{% static 'Home/jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'Home/addToCart.js' %}"></script>
+    
     <script src="{% static 'Home/bootstrap.js' %}"></script>
     <script src="{% static 'Home/popper.min.js' %}"></script>
   

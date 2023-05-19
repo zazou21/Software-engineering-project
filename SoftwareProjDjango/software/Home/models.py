@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class childrenproduct(models.Model):
@@ -28,7 +29,9 @@ class productAttribute(models.Model):
 
 
 class Cart(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE,db_constraint=False)
     product = models.ForeignKey(childrenproduct, on_delete=models.CASCADE)
+    product_qty=models.ImageField(null=False,blank=False)
     def __str__(self):
         return self.product.name
     
